@@ -7,7 +7,7 @@ import Link from 'next/link';
 interface Patient {
   name: string;
   patientId: string;
-  number: string;
+  number: string; 
 }
 
 export default function MyPatients() {
@@ -26,7 +26,7 @@ export default function MyPatients() {
         const res = await fetch('/api/doctor/my-patients', {
           method: 'GET',
           headers: {
-            'x-doctor-id': doctorId, // Send doctorId in the headers
+            'x-doctor-id': doctorId, // Send doctorId in the hea
           },
         });
 
